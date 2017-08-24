@@ -13,8 +13,8 @@
   "homepage": "https://github.com/digitalbazaar/equihash-signature#readme",
   "dependencies": {
     "async": "^2.4.1",
-    "equihash": "digitalbazaar/equihash#implementation",
-    "jsonld-signatures": "digitalbazaar/jsonld-signatures#multiSignature"
+    "equihash": "github:digitalbazaar/equihash#master",
+    "jsonld-signatures": "github:digitalbazaar/jsonld-signatures#multiSignature"
   },
   "peerDependencies": {
     "bedrock": "^1.4.1"
