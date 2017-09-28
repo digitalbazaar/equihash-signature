@@ -1,6 +1,6 @@
 {
   "name": "equihash-signature",
-  "version": "0.0.1-0",
+  "version": "0.0.1-3",
   "description": "equihash-signature",
   "main": "lib",
   "repository": {
@@ -14,9 +14,9 @@
   "dependencies": {
     "async": "^2.4.1",
     "equihash": "github:digitalbazaar/equihash#wip",
-    "jsonld-signatures": "github:digitalbazaar/jsonld-signatures#multiSignature"
+    "lodash": "^4.17.0"
   },
   "peerDependencies": {
-    "bedrock": "^1.4.1"
+    "jsonld": "^0.5.0"
   }
 }
