@@ -7,8 +7,7 @@
     "watch": "grunt watch"
   },
   "dependencies": {
-    "async": "^2.4.1",
-    "bedrock": "digitalbazaar/bedrock#jsonld-1.1",
+    "bedrock": "^1.8.0",
     "bedrock-test": "^2.0.0",
     "equihash-signature": "file:..",
     "grunt": "^1.0.1"
