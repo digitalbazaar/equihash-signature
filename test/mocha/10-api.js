@@ -12,11 +12,11 @@ const testDoc = {
   "id": "foo:something",
   "proof": {
     "type": "EquihashProof2018",
-    "created": "2018-02-14T23:27:45Z",
+    "created": "2018-03-02T18:32:27Z",
     "equihashParameterK": 3,
     "equihashParameterN": 64,
-    "nonce": "AQAAAA==",
-    "proofValue": "AABBiAAAnTAAALM8AAGc0AAArs4AAaiYAAE2HQABvyw="
+    "nonce": "AgAAAA==",
+    "proofValue": "AAAyywABiRYAAc2aAAH73AAAW7AAAdvuAADG7wABOu0="
   }
 };
 
