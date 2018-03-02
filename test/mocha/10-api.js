@@ -21,7 +21,7 @@ const testDoc = {
 };
 
 describe('Equihash Signature API', () => {
-  it('sign', done => {
+  it('should sign', done => {
     jsigs.sign({
       '@context': 'https://w3id.org/security/v2',
       id: 'foo:something'
@@ -38,9 +38,19 @@ describe('Equihash Signature API', () => {
     });
   });
 
-  it('verify', done => {
+  it('should verify', done => {
     jsigs.verify(testDoc, (err, result) => {
       result.verified.should.equal(true);
+      done();
+    });
+  });
+
+  it('should fail to verify', done => {
+    const badTestDoc = JSON.parse(JSON.stringify(testDoc));
+    badTestDoc.proof.proofValue =
+      'BAAyywABiRYAAc2aAAH73AAAW7AAAdvuAADG7wABOu0=';
+    jsigs.verify(badTestDoc, (err, result) => {
+      result.verified.should.equal(false);
       done();
     });
   });
